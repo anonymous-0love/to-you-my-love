@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+dist-ssr/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ─── PRIVACY ──────────────────────────────────────────────────────────────────
+# Uncomment the lines below to keep your personal photos, videos, and audio
+# OUT of any public Git repository. Strongly recommended before pushing.
+#
+# public/photos/
+# public/video/
+# public/audio/
