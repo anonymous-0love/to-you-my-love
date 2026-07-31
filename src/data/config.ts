@@ -1,8 +1,10 @@
 import type { LoveStoryConfig } from './types';
 
 // ─── Photo path helper ────────────────────────────────────────────────────────
+// import.meta.env.BASE_URL = '/' in dev, '/to-you-my-love/' on GitHub Pages
+const BASE = import.meta.env.BASE_URL;
 const p = (filename: string) =>
-  `/photos/${encodeURIComponent(filename)}`;
+  `${BASE}photos/${encodeURIComponent(filename)}`;
 
 // ─── Photo references ─────────────────────────────────────────────────────────
 export const photos = {
@@ -29,7 +31,7 @@ export const photos = {
 };
 
 // ─── Video reference ──────────────────────────────────────────────────────────
-export const localVideo = `/video/${encodeURIComponent(
+export const localVideo = `${BASE}video/${encodeURIComponent(
   'WhatsApp Video 2026-07-31 at 11.05.15 PM.mp4'
 )}`;
 
@@ -58,7 +60,7 @@ export const config: LoveStoryConfig = {
 
   // ── Music ──────────────────────────────────────────────────────────────────
   // Place your audio file at public/audio/our-song.mp3 and update below.
-  musicFile: '/audio/our-song.mp3',
+  musicFile: `${BASE}audio/our-song.mp3`,
 
   // ── Love letter ────────────────────────────────────────────────────────────
   loveLetter: `My dearest Love,
